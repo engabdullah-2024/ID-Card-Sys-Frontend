@@ -31,7 +31,7 @@ function Header() {
         <div>
         
         <div className="flex justify-between fixed top-0 px-4 sm:px-10 md:px-20 py-4 items-center w-full bg-white bg-opacity-60 backdrop-blur-md shadow z-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">CWA</h1>
+         <Link to="/">  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">CWA</h1></Link> 
             
             {/* For larger screens (md and up) */}
             <ul className="hidden md:flex space-x-5">
@@ -40,6 +40,8 @@ function Header() {
                 <Link to="/contact"><li className="hover:text-blue-500 cursor-pointer">Contact</li> </Link>
                <Link to="/id"> <li className="hover:text-blue-500 cursor-pointer">Register</li></Link>
            <Link to ="/login">   <li className="hover:text-blue-500 cursor-pointer">Login</li></Link>  
+           <Link to ="/student">   <li className="hover:text-blue-500 cursor-pointer">ID</li></Link>  
+           
             </ul>
 
             {/* For mobile (smaller screens) */}
@@ -61,6 +63,7 @@ function Header() {
                    <Link to="/contact">         <li className="hover:text-blue-500 cursor-pointer" onClick={toggleMenu}>Contact</li> </Link>
                    <Link to="/id"><li className="hover:text-blue-500 cursor-pointer" onClick={toggleMenu}>Register</li></Link> 
                 <Link to="/login">    <li className="hover:text-blue-500 cursor-pointer" onClick={toggleMenu}>Login</li></Link>  
+                <Link to ="/student">   <li className="hover:text-blue-500 cursor-pointer">ID</li></Link>
                 </ul>
                 
             )}

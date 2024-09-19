@@ -6,6 +6,8 @@ import IDCARD from "./components/IDCARD"
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
 import Sys from "./pages/Sys"
+
+import Student from "./components/Student"
 function App (){
   return <Routes>
             <Route path="/header" element={<Header />} />
@@ -13,8 +15,10 @@ function App (){
             <Route path="/id" element={<IDCARD />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
+            
             <Route path="/sys" element={<Sys />} />
             <Route path="/" element={<Home />} />
+            <Route path="/student" element={<Student />} />
 
            
 
